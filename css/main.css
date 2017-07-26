@@ -1,5 +1,17 @@
 body {
-  background: antiquewhite; }
+  background: #FAEBD7;
+  margin: 0; }
+
+@media screen and (min-width: 600px) {
+  header, main {
+    background: green; } }
+
+header {
+  display: flex; }
+  header .logo {
+    width: 2em;
+    height: 2em;
+    margin: 1.4em 0.4em; }
 
 button {
   border-radius: 6px; }
