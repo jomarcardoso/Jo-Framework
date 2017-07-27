@@ -1,0 +1,35 @@
+main {
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap: nowrap;
+  //flex-flow: row wrap;
+  //justify-content: space-around; // alinhamento main
+  //align-items: stretch; // alinhamento cross da linha
+  //align-content: center; // alinhamento cross de uma linha para a outra
+  //height: 800px;
+  //writing-mode: vertical-rl;
+
+
+  > div {
+    //width: 15%;
+    //margin: 3px;
+    background: cyan;
+    //flex-grow: 1;
+    //flex-basis: auto;
+    //flex-shrink: 1; //quando se tem um tamanho flex-basis/width você pode escolher qual sacrificar
+    //flex: initial; // flex 0 1 auto
+    //flex: auto; // flex 1 1 auto
+    //flex: none; // flex 0 0 auto
+    //flex: 1; // flex 0 0 auto
+  }
+
+  div:nth-child(1) {
+    //order: 2;
+    //flex-grow: 2;
+    //align-self: center;
+  }
+  div:nth-child(2) {
+    //flex-shrink: 2; // no caso de ter que sacrificar um você escolheu este
+  }
+
+}

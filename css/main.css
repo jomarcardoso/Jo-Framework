@@ -1,17 +1,27 @@
 body {
-  background: #FAEBD7;
   margin: 0; }
 
-@media screen and (min-width: 600px) {
-  header, main {
-    background: green; } }
+.amarelo {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.verde {
+  --cor: #FE9833; }
 
 header {
+  background: var(--color4);
   display: flex; }
   header .logo {
     width: 2em;
     height: 2em;
     margin: 1.4em 0.4em; }
+
+main > div {
+  background: cyan; }
 
 button {
   border-radius: 6px; }

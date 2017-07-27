@@ -1,10 +1,8 @@
 @import "variables";
-body {
-  background: #FAEBD7;
-  margin: 0;
-}
+@import "imports/body";
 @import "imports/containers";
 @import "imports/header";
+@import "imports/main";
 
 @import "imports/buttons";
 @import "imports/progress_bars";
