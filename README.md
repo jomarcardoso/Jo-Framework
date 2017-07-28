@@ -8,7 +8,7 @@ __We will not use "variables" and "mixins", we will only use "nested rules" and 
 ## Jo Sets
 The CSS basis of the Framework will be the "Jo Sets" where it will bring the definitions that will be used in any project of the same.
 The "_main.scss_" controls all imports, among them:
- * _color_palettes_ - ;
- * 
+ * _color_palettes_ - Includes color palette imports (you should generally leave only one uncommented), you can create a new palette and import it as well.;
+ * _font_group_ - Inclues font group imports (you should generally leave only one uncommented), you can create a new group and import it as well.;
  
 
