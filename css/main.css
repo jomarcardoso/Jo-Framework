@@ -1,7 +1,84 @@
-body {
-  margin: 0; }
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
 
-.amarelo {
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
+  --color1: #FAEBD7;
+  --color2: #E63946;
+  --color3: #F1FAEE;
+  --color4: #A8DADC;
+  --color5: #457B9D;
+  --color6: #1D3557; }
+
+.palette1 {
   --color1: #FAEBD7;
   --color2: #E63946;
   --color3: #F1FAEE;
@@ -11,6 +88,9 @@ body {
 
 .verde {
   --cor: #FE9833; }
+
+body {
+  margin: 0; }
 
 header {
   background: var(--color4);
