@@ -6,9 +6,9 @@ Jo Framework use _SASS_ to organize the code and allow developers more familiar 
 __We will not use "variables" and "mixins", we will only use "nested rules" and "inline imports" that SASS offers to organize the code.__
 
 ## Jo Sets
-The CSS basis of the Framework will be the "Jo Sets" where it will bring the definitions that will be used in any project of the same.
-The "_main.scss_" controls all imports, among them:
- * _color_palettes_ - Includes color palette imports (you should generally leave only one uncommented), you can create a new palette and import it as well.;
- * _font_group_ - Inclues font group imports (you should generally leave only one uncommented), you can create a new group and import it as well.;
+The CSS basis of the Framework will be the "_Jo Sets_" where it will bring the definitions that will be used in any project of the same.
+The "__main.scss__" controls all imports, among them:
+ * __color_palettes__ - Includes color palette imports (you should generally leave only one uncommented), you can create a new palette and import it as well.;
+ * __font_group__ - Inclues font group imports (you should generally leave only one uncommented), you can create a new group and import it as well.;
  
 
