@@ -1,0 +1,98 @@
+body > header {
+  background: var(--color4);
+  grid-area: header;
+  //position: fixed;  
+}
+
+header > section, footer > section {
+  //grid-area: content;
+  //display: flex;
+  //justify-content: space-between;
+
+}
+
+header {
+  display: grid;
+  grid-template-areas: ". content .";
+
+  .content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "brand search user";
+
+    > section {
+      display: flex;
+      align-items: center;
+      margin: 0 2px;
+      justify-content: center;
+    }
+
+    .brand {
+      grid-area: brand;
+    }
+
+    .search {
+      grid-area: search;
+
+      input, button {
+        height: 40px;
+      }
+      input {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    .user {
+      grid-area: user;
+      justify-content: flex-end;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+      }
+
+      .user-name {
+      }
+    }
+
+
+    // não deveria ser usado margin nos elementos, ver isso depois
+    // > section:first-child {
+    //   margin-left: 2px;
+    // }
+    //
+    // > section:nth-child(3) { //arrumar isso depois
+    //   margin-right: 2px;
+    // }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      margin: 0 6px 0 0;
+    }
+
+    @media (max-width: $pc-width) {
+
+      .brand {
+        padding: 0 6px 0 4px;
+      }
+
+      .user {
+        padding: 0 4px 0 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: $pc-width) {
+  header {
+    > section {
+      .logo {
+        //margin: 0 6px;
+      }
+    }
+  }
+}
