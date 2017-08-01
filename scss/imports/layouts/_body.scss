@@ -1,10 +1,9 @@
 body {
   margin: 0;
-  background: var(--color6);
   min-height: 100vh;
 }
 
-body, body > header, body > footer, body > nav {
+body {
   display: grid;
   grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr;
 
@@ -14,15 +13,6 @@ body, body > header, body > footer, body > nav {
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
   "header header header"
-  ". main ."
-  "footer footer footer";
-}
-
-.hourglass.nav {
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-areas:
-  "header header header"
-  "nav nav nav"
   ". main ."
   "footer footer footer";
 }

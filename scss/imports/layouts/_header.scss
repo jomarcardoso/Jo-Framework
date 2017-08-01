@@ -1,91 +1,114 @@
-body > header {
-  background: var(--color4);
-  grid-area: header;
-  //position: fixed;  
-}
-
-header > section, footer > section {
-  //grid-area: content;
-  //display: flex;
-  //justify-content: space-between;
-
-}
-
 header {
+  font-family: var(--font-title);
+}
+
+body > header {
+  grid-area: header;
   display: grid;
-  grid-template-areas: ". content .";
+  grid-template-areas:
+  "header-header"
+  "header-nav";
 
-  .content {
-    grid-area: content;
+  > header {
+    grid-area: header-header;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "brand search user";
+    grid-template-areas: ". content .";
+    grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr;
 
-    > section {
-      display: flex;
-      align-items: center;
-      margin: 0 2px;
-      justify-content: center;
-    }
+    .content {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "brand search user";
 
-    .brand {
-      grid-area: brand;
-    }
-
-    .search {
-      grid-area: search;
-
-      input, button {
-        height: 40px;
+      > section, section > form {
+        display: flex;
+        align-items: center;
+        margin: 0 2px;
+        justify-content: center;
       }
-      input {
-        width: 100%;
-        max-width: 500px;
-      }
-    }
-
-    .user {
-      grid-area: user;
-      justify-content: flex-end;
-
-      img {
-        width: 40px;
-        height: 40px;
-        margin: 0 4px;
-      }
-
-      .user-name {
-      }
-    }
-
-
-    // não deveria ser usado margin nos elementos, ver isso depois
-    // > section:first-child {
-    //   margin-left: 2px;
-    // }
-    //
-    // > section:nth-child(3) { //arrumar isso depois
-    //   margin-right: 2px;
-    // }
-
-    .logo {
-      width: 40px;
-      height: 40px;
-      margin: 0 6px 0 0;
-    }
-
-    @media (max-width: $pc-width) {
 
       .brand {
-        padding: 0 6px 0 4px;
+        grid-area: brand;
+      }
+
+      .search {
+        grid-area: search;
+
+        form {
+          width: 100%;
+          input, button {
+            height: 40px;
+          }
+
+          input {
+            width: 100%;
+            max-width: 500px;
+          }
+        }
       }
 
       .user {
-        padding: 0 4px 0 6px;
+        grid-area: user;
+        justify-content: flex-end;
+
+        img {
+          width: 40px;
+          height: 40px;
+          margin: 0 4px;
+        }
+
+        .user-name {
+        }
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin: 0 6px 0 0;
+      }
+    }
+    @media (max-width: $pc-width) {
+
+      .content {
+        padding: 0 6px;
+      }
+    }
+  }
+
+  nav {
+    grid-area: header-nav;
+    display: grid;
+    grid-template-areas: ". nav-content .";
+    grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr;
+
+    ul {
+      grid-area: nav-content;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content:space-around;
+
+      li {
+        flex-basis: 100%;
+        list-style: none;
+        padding: 8px 0;
+        text-align: center;
+      }
+
+      li:hover {
+        display: block;
+        //filter: brightness(50%);
+        
       }
     }
   }
 }
+
+body > nav {
+  //position: fixed;
+}
+
 
 @media (max-width: $pc-width) {
   header {

@@ -1,9 +1,6 @@
 main {
-  background: var(--color3);
   display: grid;
   grid-area: main;
-  grid-template-rows: auto 1fr;
-  overflow: auto;
 
 
   header {
@@ -33,14 +30,17 @@ main.quarter-header {
   }
 
   aside {
+
   }
 
   section.content {
+
   }
 }
 
 @media (min-width: $pc-width) {
   main.quarter-header {
+    grid-template-rows: auto 1fr;
     grid-template-areas:
     "main-header main-header"
     "main-aside main-content";
@@ -58,6 +58,7 @@ main.quarter-header {
 
 @media (max-width: $pc-width) {
   main.quarter-header {
+    grid-template-rows: auto auto 1fr;
     grid-template-areas:
     "main-header main-header"
     "main-aside main-aside"
