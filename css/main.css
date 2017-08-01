@@ -146,6 +146,9 @@ body {
 
 header {
   font-family: var(--font-title); }
+  header a {
+    text-decoration: none;
+    color: inherit; }
 
 body > header {
   grid-area: header;
@@ -169,7 +172,8 @@ body > header {
       body > header > header .content .brand {
         grid-area: brand; }
       body > header > header .content .search {
-        grid-area: search; }
+        grid-area: search;
+        margin: 0 18px; }
         body > header > header .content .search form {
           width: 100%; }
           body > header > header .content .search form input, body > header > header .content .search form button {
@@ -241,9 +245,7 @@ main.quarter-header {
       display: flex;
       flex-wrap: wrap; } }
 footer {
-  background: var(--color3);
   grid-area: footer;
-  border-top: 10px solid var(--color4);
   display: grid;
   grid-template-areas: ". footer-content .";
   grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr; }
@@ -272,16 +274,22 @@ footer {
   border-radius: 5px; }
 
 body header header {
-  background-color: var(--color3); }
+  background-color: var(--color4);
+  color: white; }
+  body header header .search input, body header header .search button {
+    border: 2px solid white; }
+  body header header .search button {
+    background-color: var(--color4); }
 body header nav {
   border-bottom: 2px solid #e5e5e5; }
   body header nav ul li:hover {
     background-color: #f7f7f7; }
+body footer {
+  background: var(--color4); }
 
 button {
   font-family: var(--font-title);
   font-weight: bold;
-  background-color: var(--color1);
   color: var(--color2); }
 
 .progress-bar {
@@ -333,6 +341,6 @@ button {
   background-size: 100%, 100%; }
 
 input {
-  font-family: var(--font-text); }
+  font-family: var(--font-title); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,19 @@
 body {
   header {
     header {
-      background-color: var(--color3);
+      background-color: var(--color4);
+      color: white;
+      .search {
+        input, button {
+          border: 2px solid white;
+        }
+        input{
+
+        }
+        button {
+            background-color: var(--color4);
+        }
+      }
     }
     nav {
       border-bottom: 2px solid #e5e5e5;
@@ -13,5 +25,11 @@ body {
         }
       }
     }
+  }
+  main {
+
+  }
+  footer {
+    background: var(--color4);
   }
 }

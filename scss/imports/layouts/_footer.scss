@@ -1,7 +1,5 @@
-footer {
-  background: var(--color3);
+footer {  
   grid-area: footer;
-  border-top: 10px solid var(--color4);
   display: grid;
   grid-template-areas: ". footer-content .";
   grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr;

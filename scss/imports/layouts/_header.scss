@@ -1,5 +1,10 @@
 header {
   font-family: var(--font-title);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 body > header {
@@ -34,6 +39,7 @@ body > header {
 
       .search {
         grid-area: search;
+        margin: 0 18px;
 
         form {
           width: 100%;
@@ -99,7 +105,7 @@ body > header {
       li:hover {
         display: block;
         //filter: brightness(50%);
-        
+
       }
     }
   }
