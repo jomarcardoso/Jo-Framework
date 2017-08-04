@@ -1,17 +1,25 @@
 main {
   display: grid;
   grid-area: main;
-
-
   header {
     grid-area: main-header;
   }
-
   aside {
     grid-area: main-aside;
-
+    h1, h2, h3, h4, h5, h6 {
+      margin: 4px 0;
+    }
     ul {
       list-style: none;
+      padding: 6px 0;
+      margin: 0;
+      flex-wrap: wrap;
+      li {
+        a {
+          padding: 2px 12px;
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -20,13 +28,15 @@ main {
   }
 }
 
+
 main.quarter-header {
-  grid-template-columns: auto 1fr;
+  grid-template-columns: minmax(170px, auto) 1fr;
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
   }
 
   aside {
@@ -34,21 +44,17 @@ main.quarter-header {
   }
 
   section.content {
-
+    padding: 30px;
   }
 }
 
 @media (min-width: $pc-width) {
   main.quarter-header {
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas:
-    "main-header main-header"
-    "main-aside main-content";
-
-
-    aside {
-
-    }
+    "main-aside main-header"
+    "main-aside main-content"
+    ". main-content";
 
     section.content {
 
@@ -65,10 +71,8 @@ main.quarter-header {
     "main-content main-content";
 
     aside {
-
       ul {
         display: flex;
-        flex-wrap: wrap;
       }
     }
 

@@ -1,346 +1,64 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin:400,700|Old+Standard+TT:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Average|Fjalla+One");
-@import url("https://fonts.googleapis.com/css?family=Istok+Web:400,700|Lora:400,400i,700");
-.jabuti, .fonts1 {
-  --font-title: 'Cabin', sans-serif;
-  --font-text: 'Old Standard TT', serif; }
+/*
+Error: File to import not found or unreadable: imports/color_styles/colorful.
+       Load path: C:/Users/Jomar/OneDrive/Crescer 2017/Jo-Framework-Rounded/scss
+        on line 44 of scss/main.scss
 
-.buffalo, .fonts2 {
-  --font-title: 'Fjalla One', sans-serif;
-  --font-text: 'Average', serif; }
+39: //color-plans
+40: 
+41: //color-styles
+42: @import "imports/color_styles/clean";
+43: @import "imports/color_styles/light";
+44: @import "imports/color_styles/colorful";
+45: @import "imports/color_styles/heavy";
+46: @import "imports/color_styles/dirty";
+47: 
+48: @import "imports/buttons";
+49: @import "imports/progress_bars";
 
-.anteater, .fonts3 {
-  --font-title: 'Istok Web', sans-serif;
-  --font-text: 'Lora', serif; }
-
-:root {
-  --tv-width: 1200px;
-  --pc-width: 992px;
-  --tablet-width: 768px; }
-
-.palette1 {
-  --color1: #E63946;
-  --color2: #F1FAEE;
-  --color3: #A8DADC;
-  --color4: #457B9D;
-  --color5: #1D3557; }
-
-.palette10 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette11 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette12 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette13 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette14 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette15 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette16 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette17 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette18 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.palette19 {
-  --color1: #FAEBD7;
-  --color2: #E63946;
-  --color3: #F1FAEE;
-  --color4: #A8DADC;
-  --color5: #457B9D;
-  --color6: #1D3557; }
-
-.verde {
-  --cor: #FE9833; }
-
-* {
-  box-sizing: border-box; }
-
-img {
-  background: gainsboro; }
-
-body {
-  font-family: var(--font-text); }
-
-h1.center,
-h2.center,
-h3.center,
-h4.center,
-h5.center,
-h6.center,
-p.center {
-  text-align: center; }
-
-body {
-  margin: 0;
-  min-height: 100vh; }
-
-body {
-  display: grid;
-  grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr; }
-
-.hourglass {
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header header header" ". main ." "footer footer footer"; }
-
-.sandwich {
-  grid-template-areas: ". header ." ". main ." ". footer ."; }
-
-.sandwich.nav {
-  grid-template-areas: ". header ." ". nav ." ". main ." ". footer ."; }
-
-header {
-  font-family: var(--font-title); }
-  header a {
-    text-decoration: none;
-    color: inherit; }
-
-body > header {
-  grid-area: header;
-  display: grid;
-  grid-template-areas: "header-header" "header-nav"; }
-  body > header > header {
-    grid-area: header-header;
-    display: grid;
-    grid-template-areas: ". content .";
-    grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr; }
-    body > header > header .content {
-      grid-area: content;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      grid-template-areas: "brand search user"; }
-      body > header > header .content > section, body > header > header .content section > form {
-        display: flex;
-        align-items: center;
-        margin: 0 2px;
-        justify-content: center; }
-      body > header > header .content .brand {
-        grid-area: brand; }
-      body > header > header .content .search {
-        grid-area: search;
-        margin: 0 18px; }
-        body > header > header .content .search form {
-          width: 100%; }
-          body > header > header .content .search form input, body > header > header .content .search form button {
-            height: 40px; }
-          body > header > header .content .search form input {
-            width: 100%;
-            max-width: 500px; }
-      body > header > header .content .user {
-        grid-area: user;
-        justify-content: flex-end; }
-        body > header > header .content .user img {
-          width: 40px;
-          height: 40px;
-          margin: 0 4px; }
-      body > header > header .content .logo {
-        width: 40px;
-        height: 40px;
-        margin: 0 6px 0 0; }
-    @media (max-width: 992px) {
-      body > header > header .content {
-        padding: 0 6px; } }
-  body > header nav {
-    grid-area: header-nav;
-    display: grid;
-    grid-template-areas: ". nav-content .";
-    grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr; }
-    body > header nav ul {
-      grid-area: nav-content;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: space-around; }
-      body > header nav ul li {
-        flex-basis: 100%;
-        list-style: none;
-        padding: 8px 0;
-        text-align: center; }
-      body > header nav ul li:hover {
-        display: block; }
-
-main {
-  display: grid;
-  grid-area: main; }
-  main header {
-    grid-area: main-header; }
-  main aside {
-    grid-area: main-aside; }
-    main aside ul {
-      list-style: none; }
-  main section.content {
-    grid-area: main-content; }
-
-main.quarter-header {
-  grid-template-columns: auto 1fr; }
-  main.quarter-header header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-
-@media (min-width: 992px) {
-  main.quarter-header {
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "main-header main-header" "main-aside main-content"; } }
-@media (max-width: 992px) {
-  main.quarter-header {
-    grid-template-rows: auto auto 1fr;
-    grid-template-areas: "main-header main-header" "main-aside main-aside" "main-content main-content"; }
-    main.quarter-header aside ul {
-      display: flex;
-      flex-wrap: wrap; } }
-footer {
-  grid-area: footer;
-  display: grid;
-  grid-template-areas: ". footer-content .";
-  grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr; }
-  footer .content {
-    grid-area: footer-content; }
-
-.cols1 {
-  --cols: 1; }
-
-.cols2 {
-  --cols: 2; }
-
-.cols3 {
-  --cols: 3; }
-
-.cols4 {
-  --cols: 4; }
-
-.squared-rounded > header > header .brand img {
-  border-radius: 0; }
-.squared-rounded > header > header .search input {
-  border-radius: 5px 0 0 5px; }
-.squared-rounded > header > header .search button {
-  border-radius: 0 5px 5px 0; }
-.squared-rounded img {
-  border-radius: 5px; }
-
-body header header {
-  background-color: var(--color4);
-  color: white; }
-  body header header .search input, body header header .search button {
-    border: 2px solid white; }
-  body header header .search button {
-    background-color: var(--color4); }
-body header nav {
-  border-bottom: 2px solid #e5e5e5; }
-  body header nav ul li:hover {
-    background-color: #f7f7f7; }
-body footer {
-  background: var(--color4); }
-
-button {
-  font-family: var(--font-title);
-  font-weight: bold;
-  color: var(--color2); }
-
-.progress-bar {
-  margin: auto;
-  width: 480px;
-  background: black;
-  padding: 2px;
-  margin-bottom: 10px; }
-
-.progress-bar, .progress-bar > div {
-  border-radius: 6px; }
-
-.progress-bar > div {
-  width: 70%;
-  height: 60px;
-  background-repeat: repeat;
-  box-shadow: 0px 0px 2px 3px black inset; }
-
-.bar1 {
-  background-image: linear-gradient(to right, transparent 46px, black 4px), linear-gradient(to bottom, black, lime 5%, transparent), linear-gradient(to top, black, Chartreuse 5%);
-  background-size: 50px 100%; }
-
-.bar2 {
-  background-image: linear-gradient(to bottom, black, FireBrick 12%, transparent), linear-gradient(to top, black, Red 12%);
-  background-size: 100% 100%; }
-
-.bar3 {
-  background-image: linear-gradient(to bottom, black, transparent 12%, transparent 88%, black 100%), linear-gradient(to bottom, DarkOrange 48%, Orange 52%);
-  background-size: 100% 100%; }
-
-.bar4 {
-  background-image: linear-gradient(to bottom, black, transparent 5%, transparent 95%, black 100%), linear-gradient(60deg, SteelBlue 29%, transparent 31%, transparent 59%, SteelBlue 61%, SteelBlue 100%), linear-gradient(to bottom, LightSkyBlue, DeepSkyBlue);
-  background-size: 80px 100%; }
-
-.bar5 {
-  background-image: linear-gradient(to bottom, black, transparent 12%, transparent 88%, black 100%), linear-gradient(to right, Gold, Yellow, Gold);
-  background-size: 100%, 100px; }
-
-.bar6 {
-  background-image: linear-gradient(to bottom, black, transparent 12%, transparent 88%, black 100%), linear-gradient(to right, DarkCyan, Cyan);
-  background-size: 100%, 100%; }
-
-.bar7 {
-  background-image: linear-gradient(to bottom, black, transparent 12%, transparent 88%, black 100%), linear-gradient(to right, Purple, Blue, Aqua, Green, Yellow, Orange, Red);
-  background-size: 100%, 100%; }
-
-.bar8 {
-  background-image: linear-gradient(to bottom, black, transparent 12%, transparent 88%, black 100%), linear-gradient(to left, Silver, Silver 19px, transparent 20px, transparent 100%), linear-gradient(to right, BlueViolet, Indigo 50%, BlueViolet 100%);
-  background-size: 100%, 100%; }
-
-input {
-  font-family: var(--font-title); }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+scss/main.scss:44
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: imports/color_styles/colorful.\A        Load path: C:/Users/Jomar/OneDrive/Crescer 2017/Jo-Framework-Rounded/scss\A         on line 44 of scss/main.scss\A \A 39: //color-plans\A 40: \A 41: //color-styles\A 42: @import \"imports/color_styles/clean\";\A 43: @import \"imports/color_styles/light\";\A 44: @import \"imports/color_styles/colorful\";\A 45: @import \"imports/color_styles/heavy\";\A 46: @import \"imports/color_styles/dirty\";\A 47: \A 48: @import \"imports/buttons\";\A 49: @import \"imports/progress_bars\";"; }

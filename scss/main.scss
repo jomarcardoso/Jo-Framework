@@ -1,15 +1,49 @@
 @import "imports/font";
 @import "variables";
-@import "imports/color_palettes";
+
+//color-palette
+@import "imports/color_palettes/palette1";
+@import "imports/color_palettes/palette10";
+@import "imports/color_palettes/palette11";
+@import "imports/color_palettes/palette12";
+@import "imports/color_palettes/palette13";
+@import "imports/color_palettes/palette14";
+@import "imports/color_palettes/palette15";
+@import "imports/color_palettes/palette16";
+@import "imports/color_palettes/palette17";
+@import "imports/color_palettes/palette18";
+@import "imports/color_palettes/palette19";
 
 @import "sets";
 @import "imports/text";
 @import "imports/layouts";
 @import "imports/grid";
 @import "imports/containers";
-@import "imports/style";
-@import "imports/color_plans";
 
+//layout-style-body
+@import "imports/layouts/body/body_hourglass";
+@import "imports/layouts/body/body_sandwich";
+@import "imports/layouts/body/body_te";
+
+
+//form-sytle
+@import "imports/form_styles/squared";
+@import "imports/form_styles/rounded";
+@import "imports/form_styles/squared-rounded";
+
+//color-shades
+@import "imports/color_shades/clear";
+@import "imports/color_shades/sunset";
+@import "imports/color_shades/dark";
+
+//color-plans
+
+//color-styles
+@import "imports/color_styles/clean";
+@import "imports/color_styles/light";
+@import "imports/color_styles/colorful";
+@import "imports/color_styles/heavy";
+@import "imports/color_styles/dirty";
 
 @import "imports/buttons";
 @import "imports/progress_bars";

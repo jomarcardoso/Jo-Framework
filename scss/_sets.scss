@@ -11,5 +11,13 @@ li {
 }
 
 body {
+  font-family: var(--font-title);
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, var(--pc-width)) 1fr;
+}
+
+article {
   font-family: var(--font-text);
 }

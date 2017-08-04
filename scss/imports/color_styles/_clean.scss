@@ -1,35 +1,42 @@
-body {
+.light {
   header {
     header {
-      background-color: var(--color4);
-      color: white;
       .search {
         input, button {
-          border: 2px solid white;
         }
         input{
-
         }
         button {
-            background-color: var(--color4);
         }
       }
     }
     nav {
-      border-bottom: 2px solid #e5e5e5;
       ul {
         li {
+          a {
+          }
         }
         li:hover {
-          background-color: #f7f7f7;
         }
       }
     }
   }
   main {
-
+    aside {
+      h1, h2, h3, h4, h5, h6 {
+      }
+      ul {
+        li {
+          a {
+          }
+        }
+        li:hover {
+          a {
+          }
+        }
+      }
+    }
   }
   footer {
-    background: var(--color4);
   }
 }

@@ -1,0 +1,7 @@
+.hourglass {
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "header header header"
+  ". main ."
+  "footer footer footer";
+}
