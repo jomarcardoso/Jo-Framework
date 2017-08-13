@@ -1,0 +1,33 @@
+.express {
+  header {
+    section.adversiting {
+
+    }
+    nav {
+      ul {
+        justify-content: flex-end;
+        li {
+           flex-basis: auto;
+        }
+      }
+    }
+    header {
+      .brand {
+        text-align: center;
+        a {
+          span {
+            //overflow: hidden;
+            width: 166px;           
+            display: block;
+          }
+          .logo {
+
+          }
+          .slogan {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

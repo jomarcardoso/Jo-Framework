@@ -1,9 +1,33 @@
 .palette1 {
-  --color1: #E63946; //desire
-  --color2: #F1FAEE; //honeydew
-  --color3: #A8DADC; //lightblue
-  --color4: #457B9D; //queenblue
-  --color5: #1D3557; //spacecadet
+  --color1-hue: 355;
+  --color1-saturation: 78%;
+  --color1-lightness: 56%;
+  --color1: hsl(var(--color1-hue), var(--color1-saturation), var(--color1-lightness));
+  --color1-hex: #E63946; //desire
+
+  --color2-hue: 105;
+  --color2-saturation: 55%;
+  --color2-lightness: 96%;
+  --color2: hsl(var(--color2-hue), var(--color2-saturation), var(--color2-lightness));
+  --color2-hex: #F1FAEE; //honeydew
+
+  --color3-hue: 182;
+  --color3-saturation: 43%;
+  --color3-lightness: 76%;
+  --color3: hsl(var(--color3-hue), var(--color3-saturation), var(--color3-lightness));
+  --color3-hex: #A8DADC; //lightblue
+
+  --color4-hue: 203;
+  --color4-saturation: 39%;
+  --color4-lightness: 44%;
+  --color4: hsl(var(--color4-hue), var(--color4-saturation), var(--color4-lightness));
+  --color4-hex: #457B9D; //queenblue
+
+  --color5-hue: 215;
+  --color5-saturation: 50%;
+  --color5-lightness: 23%;
+  --color5: hsl(var(--color5-hue), var(--color5-saturation), var(--color5-lightness));
+  --color5-hex: #1D3557; //spacecadet
 }
 
 // https://coolors.co

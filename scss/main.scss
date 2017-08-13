@@ -32,19 +32,26 @@
 @import "imports/form_styles/squared-rounded";
 
 //color-shades
-@import "imports/color_shades/clear";
+@import "imports/color_shades/color_shades_set";
+@import "imports/color_shades/day";
+@import "imports/color_shades/sunrise";
 @import "imports/color_shades/sunset";
-@import "imports/color_shades/dark";
+@import "imports/color_shades/night";
 
 //color-plans
+@import "imports/color_plans/monochrome";
+@import "imports/color_plans/color_plans_set";
+@import "imports/color_plans/colorful";
 
 //color-styles
+@import "imports/color_styles/color_styles_set";
 @import "imports/color_styles/clean";
 @import "imports/color_styles/light";
-@import "imports/color_styles/colorful";
 @import "imports/color_styles/heavy";
 @import "imports/color_styles/dirty";
 
 @import "imports/buttons";
 @import "imports/progress_bars";
 @import "imports/forms";
+
+@import "imports/layout_web_sites/ecommerce/express";

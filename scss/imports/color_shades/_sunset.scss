@@ -1,62 +1,15 @@
 .sunset {
-  color: var(--black);
-  header {
-    header {
-      background-color: var(--color4);
-      color: white;
-      .search {
-        input{
-        }
-        button {
-          background-color: var(--color4);
-        }
-      }
-    }
-    nav {
-      ul {
-        li {
+  //--color-menu-cl: var(--color-title);
+  //--background-items-mono-dh: var(--color4);
 
-          a {
-            color: var(--black);
-          }
-        }
-        li:hover {
-          background-color: var(--light-gray);
-        }
-      }
-    }
-  }
-  main {
-    aside {
-      border: 1px solid var(--gray);
+  --background-menu: var(--color4);
+  --color-menu-cl: white;
+  --color-menu-dh: white;
+  //--border-menu: hsl(var(--color2-hue), calc(var(--color2-saturation) - 21%), calc(var(--color2-lightness) - 12%));
 
-      h1, h2, h3, h4, h5, h6 {
-        margin: 0;
-        padding: 4px 12px;
-        border-bottom: 1px solid var(--gray);
-      }
+  --background-items-mono-dh: var(--color3);
+  --color-items-mono-dh: white;
 
-      ul {
-
-
-        li {
-
-          a {
-            color: var(--black);
-          }
-        }
-
-        li:hover {
-
-          a {
-            color: var(--color4);
-            font-weight: 700;
-          }
-        }
-      }
-    }
-  }
-  footer {
-    background: var(--color4);
-  }
+  --background-items-mono-cl: var(--color4);
+  //--color-items-mono-cl: ;
 }

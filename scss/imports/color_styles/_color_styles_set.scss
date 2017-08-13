@@ -1,0 +1,27 @@
+body {
+  header {
+    header {
+      background-color: var(--background-menu);
+      border-bottom: 1px solid var(--border-menu);
+      .search {
+        input {
+
+        }
+        button {
+
+        }
+      }
+    }
+  }
+  main {
+    aside {
+      a {
+        color: var(--color-title);
+      }
+    }
+  }
+  footer {
+    background-color: var(--background-menu);
+    border-top: 1px solid var(--border-menu);
+  }
+}

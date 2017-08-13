@@ -1,16 +1,19 @@
 .light {
-  --black: #252525;
   --gray: #e5e5e5;
   --light-gray: #f7f7f7;
   header {
     header {
+      color: var(--color-menu-cl);
       .search {
         input, button {
-          border: 2px solid white;
+          border: 2px solid var(--border-menu, white);
         }
         input{
+
         }
         button {
+          background-color: var(--background-items-cl);
+          color: var(--color-items-cl);
         }
       }
     }
@@ -20,16 +23,20 @@
       ul {
         li {
           a {
+            color: var(--color-title);
           }
         }
         li:hover {
+          background-color: var(--light-gray);
         }
       }
     }
   }
   main {
     aside {
+      border: 1px solid var(--gray);
       h1, h2, h3, h4, h5, h6 {
+        border-bottom: 1px solid var(--gray);
       }
       ul {
         li {
@@ -44,5 +51,6 @@
     }
   }
   footer {
+    color: var(--color-menu-cl);
   }
 }
